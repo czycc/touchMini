@@ -5,14 +5,14 @@
 	},
 	"setting": {
 		"urlCheck": false,
-		"es6": false,
+		"es6": true,
 		"postcss": false,
-		"minified": true,
+		"minified": false,
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.9.98",
-	"appid": "wxc9ee6d4d24fe24c7",
+	"appid": "wx9da69c0961dbedaf",
 	"projectname": "gotop",
 	"isGameTourist": false,
 	"condition": {

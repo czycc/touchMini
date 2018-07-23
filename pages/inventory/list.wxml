@@ -21,9 +21,9 @@
             <navigator url="../pages/show/inventory">
                 <view class="weui-cells weui-cells_after-title">
                     <view class="weui-cell">
-                        <icon type="success" size="18"></icon>
-                        <view class="weui-cell__bd">标题文字</view>
-                        <view class="weui-cell__ft">说明文字</view>
+                        <icon type="success" size="18" class="list-icon"></icon>
+                        <view class="weui-cell__bd">24寸液晶屏</view>
+                        <view class="weui-cell__ft">优房仓库</view>
                     </view>
                 </view>
             </navigator>

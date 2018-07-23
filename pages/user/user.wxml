@@ -1,0 +1,14 @@
+<view class="page">
+    <image class="logo" src="http://thirdwx.qlogo.cn/mmopen/vi_32/0fskmtQtPmIwGONp89FqKHbuPfozQ9vaEyIXaQarHmiaQ5icPWLfTdrrKVJic0qGBuuOicJ4CQI3OI3bqXnqqsYApQ/132"></image>
+    <view class="weui-cells__title">普通操作</view>
+    <view class="weui-cells weui-cells_after-title">
+        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__bd">cell standard</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__bd">cell standard</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+    </view>
+</view>

@@ -1,9 +1,12 @@
 {
     "pages": [
         "pages/index/index",
-        "pages/show/show",
+        "pages/project/addProject",
+        "pages/project/project",
+        "pages/user/user",
         "pages/inventory/list",
-        "pages/project/project"
+        "pages/user/addUser",
+        "pages/show/show"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -24,14 +27,26 @@
         "backgroundColor": "#FBFBFB",
         "borderStyle": "white",
         "list": [{
-          "pagePath": "pages/index/index",
-          "text": "首页",
-          "iconPath": "images/indexUnselect.png",
-          "selectedIconPath": "images/indexSelect.png"
+            "pagePath": "pages/index/index",
+            "text": "首页",
+            "iconPath": "images/indexUnselect.png",
+            "selectedIconPath": "images/indexSelect.png"
         }, {
-          "pagePath": "pages/project/project",
-          "text": "项目"
+            "pagePath": "pages/project/project",
+            "text": "项目",
+            "iconPath": "images/projectUnselect.png",
+            "selectedIconPath": "images/projectSelect.png"
+        }, {
+            "pagePath": "pages/inventory/list",
+            "text": "库存",
+            "iconPath": "images/inventoryUnselect.png",
+            "selectedIconPath": "images/inventorySelect.png"
+        }, {
+            "pagePath": "pages/user/user",
+            "text": "个人",
+            "iconPath": "images/userUnselect.png",
+            "selectedIconPath": "images/userSelect.png"
         }]
-      },
+    },
     "debug": true
 }

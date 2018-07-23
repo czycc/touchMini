@@ -2,7 +2,7 @@ let sliderWidth = 96; // 需要设置slider的宽度，用于计算中间位置
 let app = getApp();
 Page({
     data: {
-        tabs: ['文章列表1', '文章列表2', '文章列表3', '文章列表4'],
+        tabs: [],
         categories: null,
         activeIndex: 0,
         sliderOffset: 0,
@@ -11,15 +11,6 @@ Page({
     },
     onLoad: function () {
         let that = this;
-        //顶部导航栏获取屏幕尺寸
-        wx.getSystemInfo({
-            success: function (res) {
-                that.setData({
-                    sliderLeft: (res.windowWidth / that.data.tabs.length - sliderWidth) / 2,
-                    sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex
-                });
-            }
-        });
         //测试获取地理位置
         wx.getLocation({
             type: 'wgs84',
@@ -36,13 +27,20 @@ Page({
             url: app.globalData.baseUrl + 'api/articles',
             method: 'GET',
             success: function (res) {
-                console.log(res)
                 that.setData({
-                    categories: res.data.categories,
                     articles: res.data.articles,
                 })
             }
-        })
+        });
+        //动态调整顶部导航栏尺寸
+        wx.getSystemInfo({
+            success: function (res) {
+                that.setData({
+                    sliderLeft: (res.windowWidth / that.data.articles.length - sliderWidth) / 2,
+                    sliderOffset: res.windowWidth / that.data.articles.length * that.data.activeIndex
+                });
+            }
+        });
     },
     tabClick: function (e) {
         this.setData({

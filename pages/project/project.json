@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "项目管理",
+    "usingComponents": {
+        "wux-actionsheet": "../../dist/wux/actionsheet/index"
+    }
+}
