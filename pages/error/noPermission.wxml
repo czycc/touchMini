@@ -1,0 +1,5 @@
+<!--pages/error/noPermission.wxml-->
+<view class='page'>
+    <image src='../../images/权限不够.png' class='image'></image>
+    <text class='text'>您无权访问</text>
+</view>

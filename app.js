@@ -4,12 +4,12 @@ App({
             success: function(res) {
               if (res.code) {
                 //发起网络请求
-                wx.request({
-                  url: 'https://test.com/onLogin',
-                  data: {
-                    code: res.code
-                  }
-                })
+                // wx.request({
+                //   url: 'https://test.com/onLogin',
+                //   data: {
+                //     code: res.code
+                //   }
+                // })
               } else {
                 console.log('登录失败！' + res.errMsg)
               }
@@ -24,9 +24,17 @@ App({
     },
     globalData: {
         userInfo: {
-            openid: 'test',
+            openid: '',
+            phone: '',
+            name: '',
+            nickname: '',
+            avatar: '',
+            is_new: '',
+            created_at: '',
+            permissions: [],
             hasLogin: false
         },
         baseUrl: 'http://gotop-admin.test/'
+        // baseUrl: 'https://mini.shanghaichujie.com/'
     }
 });
