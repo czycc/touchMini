@@ -13,7 +13,8 @@ Page({
    */
   onLoad: function (options) {
       //判断是否有权限
-      if (!app.globalData.haslogin) {
+
+      if (!app.globalData.userInfo.hasLogin) {
           wx.redirectTo({
               url: '../error/noPermission',
           })

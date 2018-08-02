@@ -32,7 +32,7 @@ App({
             is_new: '',
             created_at: '',
             permissions: [],
-            hasLogin: false
+            hasLogin: true
         },
         baseUrl: 'http://gotop-admin.test/'
         // baseUrl: 'https://mini.shanghaichujie.com/'

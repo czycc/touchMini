@@ -1,14 +1,15 @@
 {
     "pages": [
+        "pages/index/index",
+        "pages/show/show",
         "pages/user/user",
         "pages/project/addProject",
         "pages/project/project",
         "pages/error/noPermission",
         "pages/about/about",
-        "pages/index/index",
         "pages/inventory/list",
-        "pages/user/addUser",
-        "pages/show/show"
+        "pages/user/addUser"
+        
     ],
     "window": {
         "backgroundTextStyle": "light",
