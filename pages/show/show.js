@@ -1,4 +1,3 @@
-let wemark = require('../../dist/wemark/wemark');
 let WxParse = require('../../dist/wxParse/wxParse.js');
 let app = getApp();
 Page({

@@ -1,5 +1,5 @@
 // pages/about/about.js
-let wemark = require('../../dist/wemark/wemark');
+let WxParse = require('../../dist/wxParse/wxParse.js');
 let app = getApp();
 Page({
 
@@ -26,11 +26,8 @@ Page({
                   top_img: res.data.top_img,
                   intro: res.data.intro
               });
-              wemark.parse(that.data.intro, that, {
-                  // 新版小程序可自适应宽高
-                  // imageWidth: wx.getSystemInfoSync().windowWidth - 40,
-                  name: 'wemark'
-              })
+              WxParse.wxParse('content', 'md', that.data.intro, that);
+
           }
       })
   },
