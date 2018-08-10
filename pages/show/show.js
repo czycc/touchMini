@@ -11,15 +11,14 @@ Page({
         let that = this;
         console.log(params.id)
         wx.request({
-            url: app.globalData.baseUrl + 'api/articles/'+params.id,
+            url: app.globalData.baseUrl + '/api/articles/'+params.id,
             method: 'GET',
             success: function (res) {
-                console.log(res);
+                console.log(res.data.article)
                 that.setData({
                     md: res.data.article.content,
                     article: res.data.article
                 })
-                console.log(that.data.md)
                 WxParse.wxParse('content', 'md', that.data.md, that);
             }
         })
@@ -31,7 +30,7 @@ Page({
         let that = this;
         return {
             title: that.data.article.title,
-            path: '/page/show/show?id='+that.data.article.id
+            path: '/pages/show/show?id='+that.data.article.id
           }
     }
 })

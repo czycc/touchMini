@@ -32,9 +32,9 @@ App({
             is_new: '',
             created_at: '',
             permissions: [],
-            hasLogin: true
+            hasLogin: false
         },
-        baseUrl: 'http://gotop-admin.test/'
-        // baseUrl: 'https://mini.shanghaichujie.com/'
+        // baseUrl: 'http://gotop-admin.test/'
+        baseUrl: 'https://mini.shanghaichujie.com'
     }
 });

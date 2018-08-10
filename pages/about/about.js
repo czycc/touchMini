@@ -21,6 +21,7 @@ Page({
           url: app.globalData.baseUrl + '/api/about',
           method: 'GET',
           success: function (res) {
+              console.log(res.data)
               that.setData({
                   phone: res.data.phone,
                   top_img: res.data.top_img,

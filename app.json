@@ -9,7 +9,6 @@
         "pages/about/about",
         "pages/inventory/list",
         "pages/user/addUser"
-        
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -37,16 +36,16 @@
                 "selectedIconPath": "images/indexSelect.png"
             },
             {
-                "pagePath": "pages/project/project",
-                "text": "项目",
-                "iconPath": "images/projectUnselect.png",
-                "selectedIconPath": "images/projectSelect.png"
-            },
-            {
                 "pagePath": "pages/about/about",
                 "text": "关于我们",
                 "iconPath": "images/aboutUnselect.png",
                 "selectedIconPath": "images/aboutSelect.png"
+            },
+            {
+                "pagePath": "pages/project/project",
+                "text": "项目",
+                "iconPath": "images/projectUnselect.png",
+                "selectedIconPath": "images/projectSelect.png"
             },
             {
                 "pagePath": "pages/user/user",

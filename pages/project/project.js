@@ -12,11 +12,18 @@ Page({
         myprojects: [],
         allprojects: []
     },
+    
     onLoad: function () {
         let that = this;
+        //判断是否有权限
+        if (!app.globalData.userInfo.hasLogin) {
+            wx.redirectTo({
+                url: '../error/noPermission',
+            })
+        }
         //获取项目数据
         wx.request({
-            url: app.globalData.baseUrl + 'api/projects?openid=' + app.globalData.userInfo.openid,
+            url: app.globalData.baseUrl + '/api/projects?openid=' + app.globalData.userInfo.openid,
             method: 'GET',
             success: function (res) {
                 console.log(res.data.allprojects)

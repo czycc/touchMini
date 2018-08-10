@@ -24,7 +24,7 @@ Page({
         });
         //获取文章数据
         wx.request({
-            url: app.globalData.baseUrl + 'api/articles',
+            url: app.globalData.baseUrl + '/api/articles',
             method: 'GET',
             success: function (res) {
                 that.setData({
