@@ -1,0 +1,20 @@
+@import './theme.scss';
+
+// tab
+.van-tabs {
+  padding-top: 80px !important;
+  .van-tabs__wrap {
+    height: 80px !important;
+    .van-tabs__line {
+      height: 4px;
+      background-color: $theme-color;
+    }
+    .van-tab {
+      font-size: 30px;
+      line-height: 80px;
+      &.van-tab--active {
+        color: $theme-color;
+      }
+    }
+  }
+}
